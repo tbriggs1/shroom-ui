@@ -7,4 +7,4 @@ test('The home button is clickable', () => {
     expect(screen.findByRole('link', { name: /home/i })).toBeEnabled;
 
     
-} )
+});
