@@ -1,4 +1,3 @@
-# Building from the UI 
 FROM node:14.9
 
 WORKDIR /usr/src/app
