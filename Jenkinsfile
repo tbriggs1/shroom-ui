@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        BRANCH_NAME = ${GIT_BRANCH}
+        BRANCH_NAME = "${GIT_BRANCH}"
         DOCKER_IMAGE_NAME = "shroom-ui:${BRANCH_NAME}"
         DOCKER_REPO = "tombriggs/shroom-ui"
         DOCKER_TAG = "${DOCKER_REPO}:${BRANCH_NAME}"
