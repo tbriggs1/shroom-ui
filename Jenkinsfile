@@ -16,6 +16,11 @@ pipeline {
                 sh "docker tag ${DOCKER_IMAGE_NAME} ${DOCKER_TAG}"
                 sh "docker push ${DOCKER_TAG}"
             }
+        },
+        stage('Deploy') {
+            steps {                  
+                sh "docker run -p 3000:3000 -d ${DOCKER_IMAGE_NAME}:${BRANCH_NAME}"
+            }
         }
     }
 }
