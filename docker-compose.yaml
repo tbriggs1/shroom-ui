@@ -3,7 +3,7 @@ version: '3.1'
 services:
   
   frontend:
-    image: shroom-ui:${env.BRANCH_NAME}
+    image: shroom-ui:${BRANCH_NAME}
     ports:
       - 3000:3000
     volumes:
