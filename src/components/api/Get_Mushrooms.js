@@ -3,7 +3,7 @@ import axios from 'axios'
 
 const Get_Mushrooms = () => {
 
-    const url = 'http://localhost:8000/mushrooms/';
+    const url = 'http://46.105.174.113:8000/mushrooms/';
     useEffect(() => {
         axios.get(url).then( res => {
             console.log(res.data)
