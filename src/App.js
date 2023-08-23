@@ -11,7 +11,7 @@ function App() {
       <Header />
       <main>
         <Container className='py-3'>
-          <h1>Welcome to Mushroom Application</h1>
+          <h1>Welcome to Mushroom Application!</h1>
           <Get_Mushrooms />
         </Container>
       </main>
