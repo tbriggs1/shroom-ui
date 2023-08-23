@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  
+  frontend:
+    image: shroom-ui:latest
+    ports:
+      - 3000:3000
+    volumes:
+      - /app/shroom-ui:/app/
